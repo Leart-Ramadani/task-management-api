@@ -1,0 +1,36 @@
+{
+  "name": "task-management-api",
+  "version": "1.0.0",
+  "description": "Task management api is a REST API that allows users to create projects and manage tasks within those projects.",
+  "main": "/src/app.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "start": "node src/app.js",
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leart-Ramadani/task-management-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Leart-Ramadani/task-management-api/issues"
+  },
+  "homepage": "https://github.com/Leart-Ramadani/task-management-api#readme",
+  "dependencies": {
+    "@prisma/client": "^7.10.0",
+    "express": "^5.2.1",
+    "prisma": "^7.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "vitest": "^5.0.1"
+  }
+}

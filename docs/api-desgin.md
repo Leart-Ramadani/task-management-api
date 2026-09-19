@@ -1,13 +1,46 @@
-POST   /api/auth/register
-POST   /api/auth/login
+# API Design
 
-GET    /api/projects
-POST   /api/projects
-GET    /api/projects/:id
-PATCH  /api/projects/:id
+## Base URL
+
+/api
+
+## Authentication
+
+### Register
+POST /api/auth/register
+
+### Login
+POST /api/auth/login
+
+
+## Projects
+
+### List Projects
+GET /api/projects
+
+### Create Project
+POST /api/projects
+
+### Get Project
+GET /api/projects/:id
+
+### Update Project
+PATCH /api/projects/:id
+
+### Delete Project
 DELETE /api/projects/:id
 
-GET    /api/projects/:id/tasks
-POST   /api/projects/:id/tasks
-PATCH  /api/tasks/:id
+
+## Tasks
+
+### List Project Tasks
+GET /api/projects/:id/tasks
+
+### Create Task
+POST /api/projects/:id/tasks
+
+### Update Task
+PATCH /api/tasks/:id
+
+### Delete Task
 DELETE /api/tasks/:id
